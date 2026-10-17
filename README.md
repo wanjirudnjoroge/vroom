@@ -1,17 +1,58 @@
-# vroom
+# Vroom 
 
-A new Flutter project.
+Vroom is a Flutter-based mobile application designed to make buying and selling vehicles easier. The application allows users to explore available vehicles, view vehicle details, and navigate a streamlined vehicle shopping experience.
 
-## Getting Started
+Built with Flutter and Dart, Vroom focuses on providing an intuitive mobile interface while applying modern mobile development practices, including MVVM architecture, API integration, state management, and automated testing.
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+- **User Authentication:** Register, log in, and manage user sessions.
+- **Vehicle Listings:** Browse available vehicles for sale.
+- **Vehicle Details:** View information about individual vehicles.
+- **Product Cards:** Explore vehicle listings through reusable UI components.
+- **Shopping Cart:** Manage selected items through a cart interface.
+- **API Integration:** Communicate with backend services to retrieve and manage application data.
+- **State Management:** Manage application state using Provider.
+- **Error Handling:** Handle authentication failures and other application errors.
+- **Automated Testing:** Test application logic and UI behavior using unit and widget tests.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Technology Stack
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Framework:** Flutter
+- **Programming Language:** Dart
+- **Architecture:** Model-View-ViewModel (MVVM)
+- **State Management:** Provider
+- **API Integration:** REST APIs
+- **Testing:** Flutter Test and Mocktail
+- **Local Storage:** Shared Preferences
+- **Version Control:** Git and GitHub
+
+## Project Structure
+
+```text
+lib/
+├── model/
+│   ├── auth-exception.dart
+│   ├── cart.dart
+│   ├── login_response.dart
+│   ├── product.dart
+│   ├── token_response.dart
+│   └── user.dart
+├── screens/
+│   ├── cart_card.dart
+│   ├── home_screen.dart
+│   ├── login_screen.dart
+│   ├── product_card.dart
+│   ├── redirect.dart
+│   └── signup_screen.dart
+├── services/
+│   └── auth_api.dart
+├── view_model/
+│   └── auth_view.dart
+└── main.dart
+
+test/
+├── model/
+├── screens/
+├── services/
+└── view_model/
